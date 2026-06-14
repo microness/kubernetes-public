@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: nginx-app
-        image: powermvp/nginx-web:v1.0
+        image: junghoyou2/nginxweb:v2.0
         ports:
         - containerPort: 80
         resources:
