@@ -13,9 +13,11 @@ spec:
       labels:
         app: nginx-app
     spec:
+      imagePullSecrets:
+      - name: ecr-secret
       containers:
-      - name: nginx-app
-        image: junghoyou2/nginxweb:v1.0
+      - name: eks-nginx
+        image: 543478887384.dkr.ecr.ap-northeast-2.amazonaws.com/eks-nginx:latest
         ports:
         - containerPort: 80
         resources:
